@@ -7,6 +7,7 @@ SLEEP_THRESHOLD = 3  # seconds
 def move_mouse():
     pyautogui.moveRel(-MOVE_AMOUNT, 0)
     pyautogui.moveRel(0, -MOVE_AMOUNT)
+    pyautogui.click()
     pyautogui.moveRel(MOVE_AMOUNT, 0)
     pyautogui.moveRel(0, MOVE_AMOUNT)
 
