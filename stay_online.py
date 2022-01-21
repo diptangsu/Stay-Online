@@ -25,5 +25,5 @@ while True:
     if abs(x - x_) > MOVE_AMOUNT or abs(y - y_) > MOVE_AMOUNT:
         x_, y_ = x, y
         start = now
-    elif now - start >= 3:
+    elif now - start >= SLEEP_THRESHOLD:
         move_mouse()
